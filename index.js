@@ -49,6 +49,15 @@ $(function(){
         index++;
         move();        
     }
+
+    left.click(function(){
+        index--;
+        move();	
+    });
+    right.click(function(){
+        index++;
+        move();	
+    });
 	
 	function move(){
 		var width=-1200*index;
@@ -74,13 +83,5 @@ $(function(){
 		move();
     });
     
-    left.click(function(){
-        index--;
-        move();	
-    });
-    right.click(function(){
-        index++;
-        move();	
-    });
 
 })
